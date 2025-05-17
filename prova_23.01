@@ -1,19 +1,7 @@
-/*
-📌 Exercício 01 - Identificação do Maior e Menor Valor
-🔹 Descrição:
-Este programa em linguagem C lê três números reais fornecidos pelo usuário, armazena os valores em variáveis e determina qual é o menor e qual é o maior entre eles.
-
-🔹 Entradas:
-
-Três números reais digitados pelo usuário via scanf.
-
-🔹 Saídas:
-
-O menor valor entre os três números.
-
-O maior valor entre os três números.
-*/
-
+// 01) Faça um programa que leia 3 números reais, 
+// armazene tais valores em variáveis e, em seguida, 
+// obtenha quais são o menor e o maior valores lidos. 
+// Ao final, mostre na console o menor e o maior valores obtidos. (1,0)
 
 #include <stdio.h>
 
