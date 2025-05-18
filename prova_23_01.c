@@ -35,3 +35,30 @@ int main() {
     printf("Menor: %d e maior: %d", menor, maior);
 	return 0;
 }
+
+//02) Faça um programa que leia valores e armazene em um vetor de tamanho 12.
+//Após os valores estarem armazenados, some os números que forem primos positivos e que
+//estejam em posições impares do vetor. 
+//Para fazer tal programa, utilize o comando for e considere que 0 e 1 não são primos. 
+//Ao final, mostre a soma obtida. (3,0)
+
+#include <stdio.h>
+
+int main() {
+	int soma= 0, divi = 0;
+	int num[12];
+	for(int i=0; i<12; i++) {
+		scanf("%d", &num[i]);
+		divi= 0;
+		for(int k=1; k<=num[i]; k++) {
+			if(num[i]%k ==0) {
+				divi++;
+			}
+		}
+		if(i%2!=0 && divi==2) {
+			soma = soma + num[i];
+		}
+	}
+		printf("%d", soma);
+		return 0;
+	}
