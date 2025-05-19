@@ -49,16 +49,17 @@ int main() {
 	int num[12];
 	for(int i=0; i<12; i++) {
 		scanf("%d", &num[i]);
-		divi= 0;
-		for(int k=1; k<=num[i]; k++) {
-			if(num[i]%k ==0) {
+        divi = 0;
+		for(int j=1; j<=num[i]; j++) {
+			if(num[i]%j ==0) {
 				divi++;
 			}
 		}
-		if(i%2!=0 && divi==2) {
-			soma = soma + num[i];
+			if(i%2!=0 && divi==2 && num[i]>=0) {
+				soma = soma + num[i];
+			}
 		}
-	}
+
 		printf("%d", soma);
 		return 0;
 	}
